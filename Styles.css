@@ -1,8 +1,8 @@
 body{
-    background-color: #92dff7;
+    background-color: #ffffff;
 }
 
-h1{
+h1 {
     color: #025157;
     text-align: center;
     font-family: 'Oswald', sans-serif;
@@ -25,6 +25,15 @@ button{
     height: 45px;
     font-family: sans-serif;
 }
+
+.fixed-header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: #ffffff;
+    
+}
 .header >* {
     display: inline-block;
     font-size: 16px;
@@ -43,7 +52,7 @@ button{
 }
 .navbar{
     width: 70%;
-    text-align: left;
+    text-align: center;
     color: #025157;
     font-weight: 500;
     height: 45px; 
@@ -80,4 +89,51 @@ li{
     margin-top: 140px;
     text-align: center;
 }
- 
+
+.publish {
+    /* container styles if any */
+    margin-left: 30px;
+}
+  
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+  
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+  
+.publish > form {
+    display: flex;
+    margin-right: 18px
+}
+  
+.publish > form p {
+    color: #025157;
+    margin-right: 18px;
+}
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    
+  }
+
+  .video-promo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-promo img{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+  }
