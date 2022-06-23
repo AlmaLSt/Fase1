@@ -250,3 +250,42 @@ li{
    margin-right: 0;
    width: 20%;
 }
+
+.how-does-m-work{
+    background-color: #fffbf7;
+    padding: 50px;
+}
+.work-cycle{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5%; 
+}
+
+.work-card {
+    background: #fff;
+    border: solid 2px gainsboro;
+}
+.work-card img:nth-child(1){
+    width: 30px;
+    height: 30px;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.work-card img:nth-child(2){
+    width: 40%;
+    height: 40%;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+.work-image{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.work-content{
+    margin-top: 20px;
+    position: relative;
+}
