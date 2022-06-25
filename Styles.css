@@ -63,22 +63,26 @@ button{
     text-align: left;
     font-size: 14px;
     font-weight: 600px;
+    display: flex;
 }
 
 .actions >* {
     margin: 0 10px;
+
 }
 
 .actions a{
     color: #67b54b;
+    width: fit-content;
 }
 
 .actions button{
     color: #ffffff;
     background-color: #67b54b;
-    padding: 12px 14px;
+    padding: 10px 10px;
     border-style: none;
     border-radius: 5px;
+
 }
 li{
     display: inline;
@@ -288,4 +292,63 @@ li{
 .work-content{
     margin-top: 20px;
     position: relative;
+}
+
+.d-flex{
+    display: flex;
+    align-items:center;
+}
+
+@media (max-width: 575px){
+  /* header{
+    display: none;
+   }*/
+
+   .main{
+    margin-top: 60px;
+   }
+    h1{
+    font-size: 30px;
+   }
+
+   .banner >img{
+    width: 100%;
+   }
+
+   .publish > form{
+    flex-direction: column;
+   }
+
+   .publish > form > div{
+    height: 50px;
+    margin-top: 10px;
+   }
+   .publish > form >div > input {
+    width: 65%;
+   }
+
+   .promo{
+    flex-direction: column;
+    max-width: 90%;
+   }
+
+   .explanatory-video > video {
+    width: 100%;
+   }
+
+   .publish{
+    margin-top: 10px;
+   }
+
+   .publish > h3{
+    font-size: 25px;
+    line-height: 1.2;
+    }
+
+    .features{
+        grid-template: repeat(4, 1fr)/ 1fr;
+        height: fit-content;
+        grid-gap: 20px;
+    }
+
 }
