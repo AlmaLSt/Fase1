@@ -53,7 +53,7 @@ button{
 .navbar{
     width: 70%;
     text-align: center;
-    color: #025157;
+    background-color: #fffbf7;
     font-weight: 500;
     height: 45px; 
 }
@@ -141,24 +141,25 @@ li{
     height: 60px;
     margin-top: 20px;
   }
-
-.customers{
+/*
+.case-study{
     background-color: #a1d683;
     display: flex;
     padding: 100px 30px;
 } 
 
-.customers p{
+.case-study p{
     color: #343434;
 }
 
-.case1-description{
+.case-description{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    margin: 50px;
 }
 
-.case1-description h3{
+.case-description h3{
     font-size: 50px;
     color: #025157;
     align-content: center;
@@ -166,15 +167,26 @@ li{
     margin-top: 0;
 }
 
-.case1-description p{
+.case-description p{
     font-size: 20px;
     margin-bottom: 40px;
+    
+}
+.case-description button{
+    width: fit-content;
+    padding: .5em;
+    
+}
+.case-description img{
+    width: 100%;
+    height: 4em;
+    margin-top: 2em;
     
 }
 /*.case1-paragraph{
     font-size: 15px;
     margin-top: 60px;
-} revisar tamaños*/ 
+} 
 .case1 {
     display: flex;
     width: 30%;
@@ -210,6 +222,7 @@ li{
     height: 150px;
     width: 80px;
 }
+*/
 
 .features{
     display: grid;
@@ -298,6 +311,163 @@ li{
     display: flex;
     align-items:center;
 }
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+  }
+  
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+  }
+  
+  .success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  /* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
+.success-stories .card {
+    max-width: 370px;
+    width: 100%;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
+  .success-stories .card img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+  
+  /* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
+  .success-stories .card .card-body {
+    max-width: 370px;
+    width: 100%;
+    position: relative;
+    padding: 40px 1rem 1rem;
+  }
+  
+  /* Estos son los estilos para textos y acomodo de elementos */
+  .success-stories .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+    font-family: "Slabo 27px", serif;
+  }
+  
+  .success-stories .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .card .card-body .results {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .success-stories .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+  }
+  
+  .success-stories .card .card-body .results p {
+    margin: 0;
+  }
+  
+  .success-stories .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-footer {
+    background-color: #ffffff;
+    color: #fff;
+    border: none;
+  }
+  
+  .success-stories .card .card-body .card-circle {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:-45px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  .success-stories .card .card-body .card-circle.everly {
+    background-color: #fde9a8;
+    border: 5px solid #fde9a8;
+  }
+
+  .success-stories .card .card-body .card-circle.summit {
+    background-color: #d389f5;
+    border: 5px solid #d389f5;
+  }
+
+  .success-stories .card .card-body .card-circle.mambe {
+    background-color: #70b2fd;
+    border: 5px solid #70b2fd;
+  }
+  
+  .success-stories .card .card-body .card-circle.everly img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .success-stories .card .card-body .card-circle.summit img {
+    object-fit: contain;
+    width: 100%;
+  }
+  
+  .success-stories .card .card-body .card-circle.mambe img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  /*Responsive*/
 
 @media (max-width: 575px){
   /* header{
