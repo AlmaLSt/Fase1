@@ -1,0 +1,93 @@
+@use 'global' as *;
+
+.blog {
+    background-color: #ffffff;
+    max-width: unset;
+    padding: 5% 10%;
+
+    .title{  //anidado
+        @extend %base-title;
+    
+    }
+
+    .process-list{
+        margin-top: 40px;
+        margin-bottom: 36px;
+
+        .process{
+            margin-bottom: 25px;
+
+            &> div{
+                & >h3 {
+                    color: $dark-green-title;
+                    margin-bottom: 0;
+                    font-size: 30px;
+                    font-weight: 500;
+                }
+
+                & >p {
+                    color: $dark-green-text;
+                    margin: 0;
+                }
+            }
+
+            .process-icon{
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+                text-align: center;
+
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    button{
+        height: auto;
+        border-radius: 10px;
+        padding: 12px;
+        width: 180px;
+        margin-bottom: 15px;
+    }
+}
+
+.col{
+
+    .card {
+    height: $card-height;
+    }
+
+    .category{
+        color: $light-green;
+
+    }
+
+    .read-time {
+        color: $light-gray;
+    }
+
+    .card-text{
+        color: $gray-title;
+    
+    }
+
+    .author {
+    
+    img{
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+    }
+    p {
+        color: $gray-title;
+    
+    }
+    }
+
+    .author{
+        display: flex;
+    }
+
+}
