@@ -15,10 +15,15 @@ p{
     font-size: 20px;
 }
 
-button{
+.texto-boton {
     color: #fff;
     background-color: #025157;
 }
+
+.texto-boton:hover {
+  background-color:#67b54b; 
+}
+
 .header{
     margin-top: 40px 20px 0;
     font-size: 0;
@@ -51,11 +56,9 @@ button{
     width:15%
 }
 .navbar{
-    
     background-color: #fffbf7;
     font-weight: 500;
     height: 45px; 
-    margin-top: .5rem;
   
 }
 .navbar-light .nav-item .nav-link {
